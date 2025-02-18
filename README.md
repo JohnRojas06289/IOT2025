@@ -84,4 +84,4 @@ Puedes ver más detalles en la [documentación técnica](#).
 
 ---
 
-🚀 *Este proyecto está en desarrollo. ¡Contribuciones y sugerencias son bienvenidas!*
+🚀 *Este proyecto fue desarrollado para la universidad de La Sabana. ¡Contribuciones y sugerencias son bienvenidas!*
