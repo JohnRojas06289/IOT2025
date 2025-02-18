@@ -98,14 +98,27 @@ graph TD;
 **Función:** Captura datos del entorno y los envía al procesador.  
 
 - **Sensor Ultrasonido HC-SR04:** Mide la distancia a objetos cercanos. 
-![Sensor Ultrasonido HC-SR04](./resources/img/Modelo-de-Productos_1.jpg) 
-- **Sensor de lluvia:** Detecta la presencia de agua y determina si está lloviendo.
+![Sensor Ultrasonido HC-SR04](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/sensor-ultrasonico.jpg)
+- **Sensor de temperatura:** Detecta la temperatura actual.
+![Sensor de lluvia](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/sensor-temperatura.gif)
 
 #### 1.3 Módulo de actuadores
 **Funcioón:** Genera respuestas físicas en funcion de las decisiones del procesador.
 
 -**Buzzer**: Alarma sonora que se adctiva inmediatamente se detecta cercanía rítica de la precipitación del agua.
+![Buzzer](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/buzzer.png)
 -**Pantalla LCD**: Muestra en tiempo real la información de la distancia y que triage tiene la cercania. 
+
+
+## Galería
+
+![Buzzer](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/diagonal.jpg)
+
+![Buzzer](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/superior.jpg)
+
+![Buzzer](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/estado-critico.jpg)
+
+![Buzzer](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/estado-normal.jpg)
 
 
 ## Funcionamiento
