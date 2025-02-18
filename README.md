@@ -124,7 +124,7 @@ graph TD;
 ## Funcionamiento
 
 <video width="320" height="240" controls>
-  <source src="./resources/video/funcionamiento.mp4" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/video/funcionamiento.mp4" type="video/mp4">
   Tu navegador no soporta el elemento video.
 </video>
 
