@@ -97,7 +97,8 @@ graph TD;
 #### 1.2 Módulo de sensores 🔔 
 **Función:** Captura datos del entorno y los envía al procesador.  
 
-- **Sensor Ultrasonido HC-SR04:** Mide la distancia a objetos cercanos.  
+- **Sensor Ultrasonido HC-SR04:** Mide la distancia a objetos cercanos. 
+![Sensor Ultrasonido HC-SR04](./resources/img/Modelo-de-Productos_1.jpg) 
 - **Sensor de lluvia:** Detecta la presencia de agua y determina si está lloviendo.
 
 #### 1.3 Módulo de actuadores
@@ -107,8 +108,34 @@ graph TD;
 -**Pantalla LCD**: Muestra en tiempo real la información de la distancia y que triage tiene la cercania. 
 
 
+## Funcionamiento
+
+<video width="320" height="240" controls>
+  <source src="./resources/video/funcionamiento.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento video.
+</video>
+
+## Contribuciones
+
+Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
+3. Realiza tus cambios y haz commit (`git commit -m 'Añadida nueva característica'`).
+4. Empuja los cambios a tu rama (`git push origin feature/nueva-caracteristica`).
+5. Crea un Pull Request.
+
+---
+
+## Referencias
+
+1. **SunFounder** - Documentación oficial Kit V2 para Raspberry Pi: [SunFounder](https://docs.sunfounder.com/projects/sensorkit-v2-pi/en/latest//)
+
+---
+
 ## 📎 **Anexos**
-Puedes ver más detalles en la [documentación técnica](#).
+
+1. **Tinkercad** - Prototipado solución oficial: [Tinkercad](https://www.tinkercad.com/things/4sTa2o4PWZS/editel?sharecode=EIeFWOFX5DRneI9MpJu-DYvjm1JOlZI5UsiC8KP1DZc)
 
 ---
 
