@@ -86,8 +86,25 @@ graph TD;
 ---
 
 ## *Desarollo Teórico Modular* 📕🎯
-### Módulos del sistema
-**Función :** Capturar datos del entorno y los envía al procesador.
+### 1. Módulos del sistema  
+
+#### 1.1 Módulo de procesamiento  🧑‍💻
+**Función:** Recibe los datos de los sensores para procesamiento y toma de decisiones.  
+
+- Interpreta la información obtenida por los sensores.  
+- Activa las salidas en función de los valores detectados.  
+
+#### 1.2 Módulo de sensores 🔔 
+**Función:** Captura datos del entorno y los envía al procesador.  
+
+- **Sensor Ultrasonido HC-SR04:** Mide la distancia a objetos cercanos.  
+- **Sensor de lluvia:** Detecta la presencia de agua y determina si está lloviendo.
+
+#### 1.3 Módulo de actuadores
+**Funcioón:** Genera respuestas físicas en funcion de las decisiones del procesador.
+
+-**Buzzer**: Alarma sonora que se adctiva inmediatamente se detecta cercanía rítica de la precipitación del agua.
+-**Pantalla LCD**: Muestra en tiempo real la información de la distancia y que triage tiene la cercania. 
 
 
 ## 📎 **Anexos**
