@@ -93,6 +93,11 @@ classDiagram
         +distancia: float
         +leerDistancia(): float
     }
+
+    class TMP36GZ {
+        +temperatura: float
+        +leerTemperatura(): float
+    }
     
     class Arduino {
         +procesarDatos(): void
@@ -108,9 +113,12 @@ classDiagram
     }
     
     Sensor <|-- HC_SR04
-    HC_SR04 --> Arduino : Enviar datos
+    Sensor <|-- TMP36GZ
+    HC_SR04 --> Arduino : Enviar distancia
+    TMP36GZ --> Arduino : Enviar temperatura
     Arduino --> Buzzer : Activar alarma
     Arduino --> PantallaLCD : Mostrar información
+
 
 ```
 
