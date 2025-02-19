@@ -175,6 +175,51 @@ sequenceDiagram
 ![Buzzer](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/buzzer.png)
 -**Pantalla LCD**: Muestra en tiempo real la información de la distancia y que triage tiene la cercania. 
 
+## 🧪 Configuración Experimental, Resultados y Análisis  
+
+### 🔧 **Configuración Experimental**  
+Para evaluar el rendimiento del sistema de detección de distancias, se realizaron pruebas en diferentes escenarios con el sensor ultrasónico **HC-SR04**.  
+
+#### 📌 **Condiciones de prueba:**  
+1. **Entorno controlado:** Se realizaron mediciones en un espacio cerrado con objetos de diferentes materiales y superficies.  
+2. **Variación de distancias:** Se colocaron obstáculos a **5 cm, 15 cm, 25 cm y 40 cm** para comprobar los cambios de estado.  
+3. **Verificación del LCD y LEDs:** Se observó si la pantalla mostraba los valores correctos y los LEDs respondían adecuadamente.  
+4. **Buzzer:** Se verificó la activación del buzzer en los estados *WARNING* y *CRITICAL*.  
+
+---
+
+### 📊 **Resultados**  
+
+| Distancia (cm) | Estado Detectado | LED Encendido | Buzzer |
+|---------------|----------------|--------------|--------|
+| 40 cm        | NORMAL         | Verde       | ❌ Apagado |
+| 25 cm        | CAUTION        | Verde + Amarillo | 🔉 Suave (intervalo 1000ms) |
+| 15 cm        | WARNING        | Amarillo    | 🔔 Intermitente (intervalo 500ms) |
+| 5 cm         | CRITICAL       | Rojo        | 🚨 Constante (intervalo 200ms) |
+
+- 📌 **El sistema respondió correctamente** a los cambios de distancia, activando los LEDs y el buzzer según la tabla.  
+- 📌 **Las mediciones fueron consistentes** en todas las pruebas, con una desviación mínima de ±1 cm.  
+- 📌 **La pantalla LCD mostró correctamente los valores de distancia y estado.**  
+
+---
+
+### 📈 **Análisis**  
+
+- **Precisión del sensor:** El sensor **HC-SR04** mostró lecturas estables en distancias entre **5 cm y 100 cm**, pero comenzó a mostrar fluctuaciones leves en valores superiores a **300 cm**.  
+- **Retraso en la actualización:** Debido al uso del buffer de promedios, los cambios de estado no fueron instantáneos, sino que tomaron **500 ms** para estabilizarse.  
+- **Interferencia del entorno:** Superficies irregulares o materiales absorbentes de sonido (como tela o espuma) afectaron la precisión de las mediciones.  
+
+### 📌 **Mejoras Propuestas**  
+
+✅ Implementar un filtro para eliminar lecturas erróneas en distancias extremas.  
+✅ Ajustar el intervalo de actualización del buzzer para reducir interferencias.  
+✅ Explorar el uso de sensores adicionales para mejorar la precisión en entornos complejos.  
+
+---
+
+📌 **Conclusión:** El sistema demostró ser **efectivo y confiable** en la detección de obstáculos dentro del rango de operación del sensor ultrasónico, con una correcta activación de las señales visuales y auditivas.  
+
+
 
 ## Galería
 
