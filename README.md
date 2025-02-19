@@ -223,8 +223,25 @@ Para evaluar el rendimiento del sistema de detección de distancias, se realizar
 
 📌 **Conclusión:** El sistema demostró ser **efectivo y confiable** en la detección de obstáculos dentro del rango de operación del sensor ultrasónico, con una correcta activación de las señales visuales y auditivas.  
 
+---
+
+### 📝 **Autoevaluación del Protocolo de Pruebas** 
+
+#### ✅ **1. Cobertura de Pruebas**
+- Se han probado todos los estados del sistema ( estado normal, estado Caution, Estado Critical).
+- Se han verificado que las distancias que mmide el sensor ultrasonico sean correctas.
+- Se verificó la respuesta del buzzer y los leds ante el cambio de estado.
+- Se revisó la información presentada en la pantalla LCD.
+
+#### 🛠 **2. Precisión y Reproducibilidad** 
+- Se realizaron múltiples mediciones a la misma distancia para validar la consistencia de los resultados.  
+
+#### 🛑 **4. Identificación de Problemas Potenciales**  
+❗ En algunas pruebas, el sensor HC-SR04 mostró pequeñas fluctuaciones en la lectura.  
+❗ El buzzer podría requerir ajustes en su intensidad para mejorar la percepción del usuario.  
 
 
+---
 ## Galería
 
 ![Buzzer](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/diagonal.jpg)
