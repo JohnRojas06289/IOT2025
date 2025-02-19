@@ -149,6 +149,9 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 ## 📎 **Anexos**
 
 1. **Tinkercad** - Prototipado solución oficial: [Tinkercad](https://www.tinkercad.com/things/4sTa2o4PWZS/editel?sharecode=EIeFWOFX5DRneI9MpJu-DYvjm1JOlZI5UsiC8KP1DZc)
+2. **Video** - Video de funcionamiento: [Video funcionamiento](https://unisabanaedu-my.sharepoint.com/:v:/g/personal/johnrove_unisabana_edu_co/EbKH4edEi4ZMiHfLPR-a3_wBw8cd4eqP4fy7lcsYe58xOQ?e=Y46gva)
+3. **Código** - Código fuente: [Código](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/code.c)
+
 
 ---
 
