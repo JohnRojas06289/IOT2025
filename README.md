@@ -187,7 +187,7 @@ Para evaluar el rendimiento del sistema de detección de distancias, se realizar
 
 | Distancia (cm) | Estado Detectado | LED Encendido | Buzzer |
 |---------------|----------------|--------------|--------|
-| 31 cm        | NORMAL         | Verde       | ❌ Apagado |
+| + 31 cm        | NORMAL         | Verde       | ❌ Apagado |
 | 30 cm        | CAUTION        | Verde + Amarillo | 🔉 Suave  |
 | 20 cm        | WARNING        | Amarillo    | 🔔 Intermitente  |
 | 10 cm         | CRITICAL       | Rojo        | 🚨 Intermitente |
