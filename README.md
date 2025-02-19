@@ -141,7 +141,7 @@ sequenceDiagram
 
 ### **Tecnologías Utilizadas**
 - **Microcontroladores**: Arduino.
-- **Sensores**: Ultrasónico,tmp86GZ.
+- **Sensores**: Ultrasónico,tmp36GZ.
 - **Actuadores**: Leds, buzzer, lcdI2C.
 ---
 
