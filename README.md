@@ -76,6 +76,7 @@ graph TD;
     A[Arduino] -->|Trig/Echo| B[HC-SR04 Sensor Ultrasónico]
     A -->|Visualización| C[Leds]
     A -->|Señal| D[Buzzer]
+    A -->|sensor| F[tMP36gz]
     A -->|I2C o Paralelo| E[Pantalla LCD]
 
 ```
