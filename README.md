@@ -197,9 +197,9 @@ Para evaluar el rendimiento del sistema de detección de distancias, se realizar
 | Distancia (cm) | Estado Detectado | LED Encendido | Buzzer |
 |---------------|----------------|--------------|--------|
 | 40 cm        | NORMAL         | Verde       | ❌ Apagado |
-| 25 cm        | CAUTION        | Verde + Amarillo | 🔉 Suave (intervalo 1000ms) |
-| 15 cm        | WARNING        | Amarillo    | 🔔 Intermitente (intervalo 500ms) |
-| 5 cm         | CRITICAL       | Rojo        | 🚨 Constante (intervalo 200ms) |
+| 25 cm        | CAUTION        | Verde + Amarillo | 🔉 Suave  |
+| 15 cm        | WARNING        | Amarillo    | 🔔 Intermitente  |
+| 5 cm         | CRITICAL       | Rojo        | 🚨 Intermitente |
 
 - 📌 **El sistema respondió correctamente** a los cambios de distancia, activando los LEDs y el buzzer según la tabla.  
 - 📌 **Las mediciones fueron consistentes** en todas las pruebas, con una desviación mínima de ±1 cm.  
