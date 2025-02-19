@@ -163,16 +163,20 @@ sequenceDiagram
 #### 1.2 Módulo de sensores 🔔 
 **Función:** Captura datos del entorno y los envía al procesador.  
 
-- **Sensor Ultrasonido HC-SR04:** Mide la distancia a objetos cercanos. 
+- **Sensor Ultrasonido HC-SR04:** Mide la distancia a objetos cercanos.
+  
 ![Sensor Ultrasonido HC-SR04](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/sensor-ultrasonico.jpg)
 - **Sensor de temperatura:** Detecta la temperatura actual.
+  
 ![Sensor de lluvia](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/sensor-temperatura.gif)
 
 #### 1.3 Módulo de actuadores
 **Funcioón:** Genera respuestas físicas en funcion de las decisiones del procesador.
 
 -**Buzzer**: Alarma sonora que se adctiva inmediatamente se detecta cercanía rítica de la precipitación del agua.
+
 ![Buzzer](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/buzzer.png)
+
 -**Pantalla LCD**: Muestra en tiempo real la información de la distancia y que triage tiene la cercania. 
 
 ## 🧪 Configuración Experimental, Resultados y Análisis  
