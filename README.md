@@ -73,7 +73,7 @@ El sistema se compone de **módulos de hardware y software** integrados para mon
 ### **Diagrama de Componentes del Sistema**
 ```mermaid
 graph TD;
-    A[Arduino] -->|Trig/Echo| B[HC-SR04 Sensor Ultrasonido]
+    A[Arduino] -->|Trig/Echo| B[HC-SR04 Sensor Ultrasónico]
     A -->|Datos| C[Sensor de Lluvia]
     A -->|Señal| D[Buzzer]
     A -->|I2C o Paralelo| E[Pantalla LCD]
@@ -117,7 +117,7 @@ classDiagram
 ```mermaid
 sequenceDiagram
     participant Usuario
-    participant HC_SR04 as Sensor Ultrasonido
+    participant HC_SR04 as Sensor Ultrasónico
     participant SensorLluvia as Sensor de Lluvia
     participant Arduino
     participant Buzzer
@@ -141,7 +141,8 @@ sequenceDiagram
 
 ### **Tecnologías Utilizadas**
 - **Microcontroladores**: Arduino.
-- **Sensores**: Ultrasonido, Pluviómetro, DHT22.
+- **Sensores**: Ultrasónico,tmp86GZ.
+- **Actuadores**: Leds, buzzer, lcdI2C.
 ---
 
 ## *Desarollo Teórico Modular* 📕🎯
@@ -156,9 +157,9 @@ sequenceDiagram
 #### 1.2 Módulo de sensores 🔔 
 **Función:** Captura datos del entorno y los envía al procesador.  
 
-- **Sensor Ultrasonido HC-SR04:** Mide la distancia a objetos cercanos.
+- **Sensor Ultrasónico HC-SR04:** Mide la distancia a objetos cercanos.
   
-![Sensor Ultrasonido HC-SR04](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/sensor-ultrasonico.jpg)
+![Sensor Ultrasónico HC-SR04](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/sensor-ultrasonico.jpg)
 - **Sensor de temperatura:** Detecta la temperatura actual.
   
 ![Sensor de lluvia](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/sensor-temperatura.gif)
