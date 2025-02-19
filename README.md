@@ -264,3 +264,10 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 ---
 
 🚀 *Este proyecto fue desarrollado para la universidad de La Sabana. ¡Contribuciones y sugerencias son bienvenidas!*
+
+### INTEGRANTES 
+John Jairo Rojas Vergara
+
+Oscar David Vergara Moreno
+
+Santiago Gavilán Paez
