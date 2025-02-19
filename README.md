@@ -74,7 +74,7 @@ El sistema se compone de **módulos de hardware y software** integrados para mon
 ```mermaid
 graph TD;
     A[Arduino] -->|Trig/Echo| B[HC-SR04 Sensor Ultrasónico]
-    A -->|Datos| C[Sensor de Lluvia]
+    A -->|Visualización| C[Leds]
     A -->|Señal| D[Buzzer]
     A -->|I2C o Paralelo| E[Pantalla LCD]
 
@@ -118,22 +118,19 @@ classDiagram
 sequenceDiagram
     participant Usuario
     participant HC_SR04 as Sensor Ultrasónico
-    participant SensorLluvia as Sensor de Lluvia
     participant Arduino
     participant Buzzer
     participant LCD
 
     Usuario->>HC_SR04: Activar sensor
     HC_SR04-->>Arduino: Enviar distancia
-    Usuario->>SensorLluvia: Activar sensor
-    SensorLluvia-->>Arduino: Enviar estado de alarma
 
     Arduino->>Arduino: Procesar datos
-    alt Lluvia detectada
-        Arduino->>Buzzer: Activar alarma
+    alt Distancia crítica detectada
+        Arduino->>Buzzer: Activar alarma sonora
     end
 
-    Arduino->>LCD: Mostrar distancia y estado de alarma
+    Arduino->>LCD: Mostrar distancia y estado del sistema
 
 ```
 
