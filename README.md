@@ -80,6 +80,47 @@ graph TD;
 
 ```
 
+### Diagrama de Clases
+```mermaid
+
+classDiagram
+    class Sensor {
+        +leerDatos(): float
+    }
+    
+    class HC_SR04 {
+        +distancia: float
+        +leerDistancia(): float
+    }
+    
+    class SensorLluvia {
+        +estado: boolean
+        +detectarLluvia(): boolean
+    }
+    
+    class Arduino {
+        +procesarDatos(): void
+        +enviarSeñal(): void
+    }
+    
+    class Buzzer {
+        +activar(): void
+    }
+    
+    class PantallaLCD {
+        +mostrarDatos(): void
+    }
+    
+    Sensor <|-- HC_SR04
+    Sensor <|-- SensorLluvia
+    HC_SR04 --> Arduino : Enviar datos
+    SensorLluvia --> Arduino : Enviar datos
+    Arduino --> Buzzer : Activar alarma
+    Arduino --> PantallaLCD : Mostrar información
+
+```
+
+
 ### **Tecnologías Utilizadas**
 - **Microcontroladores**: Arduino.
 - **Sensores**: Ultrasonido, Pluviómetro, DHT22.
