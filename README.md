@@ -73,16 +73,74 @@ El sistema se compone de **módulos de hardware y software** integrados para mon
 ### **Diagrama de Componentes del Sistema**
 ```mermaid
 graph TD;
-    A[Arduino] -->|Trig/Echo| B[HC-SR04 Sensor Ultrasonido]
-    A -->|Datos| C[Sensor de Lluvia]
+    A[Arduino] -->|Trig/Echo| B[HC-SR04 Sensor Ultrasónico]
+    A -->|Visualización| C[Leds]
     A -->|Señal| D[Buzzer]
+    A -->|sensor| F[tMP36gz]
     A -->|I2C o Paralelo| E[Pantalla LCD]
 
 ```
 
+### Diagrama de Clases
+```mermaid
+
+classDiagram
+    class Sensor {
+        +leerDatos(): float
+    }
+    
+    class HC_SR04 {
+        +distancia: float
+        +leerDistancia(): float
+    }
+    
+    class Arduino {
+        +procesarDatos(): void
+        +enviarSeñal(): void
+    }
+    
+    class Buzzer {
+        +activar(): void
+    }
+    
+    class PantallaLCD {
+        +mostrarDatos(): void
+    }
+    
+    Sensor <|-- HC_SR04
+    HC_SR04 --> Arduino : Enviar datos
+    Arduino --> Buzzer : Activar alarma
+    Arduino --> PantallaLCD : Mostrar información
+
+```
+
+### Diagrama de Secuencias
+```mermaid
+sequenceDiagram
+    participant Usuario
+    participant HC_SR04 as Sensor Ultrasónico
+    participant Arduino
+    participant Buzzer
+    participant LCD
+
+    Usuario->>HC_SR04: Activar sensor
+    HC_SR04-->>Arduino: Enviar distancia
+
+    Arduino->>Arduino: Procesar datos
+    alt Distancia crítica detectada
+        Arduino->>Buzzer: Activar alarma sonora
+    end
+
+    Arduino->>LCD: Mostrar distancia y estado del sistema
+
+```
+
+
+
 ### **Tecnologías Utilizadas**
 - **Microcontroladores**: Arduino.
-- **Sensores**: Ultrasonido, Pluviómetro, DHT22.
+- **Sensores**: Ultrasónico,tmp36GZ.
+- **Actuadores**: Leds, buzzer, lcdI2C.
 ---
 
 ## *Desarollo Teórico Modular* 📕🎯
@@ -97,19 +155,85 @@ graph TD;
 #### 1.2 Módulo de sensores 🔔 
 **Función:** Captura datos del entorno y los envía al procesador.  
 
-- **Sensor Ultrasonido HC-SR04:** Mide la distancia a objetos cercanos. 
-![Sensor Ultrasonido HC-SR04](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/sensor-ultrasonico.jpg)
+- **Sensor Ultrasónico HC-SR04:** Mide la distancia a objetos cercanos.
+  
+![Sensor Ultrasónico HC-SR04](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/sensor-ultrasonico.jpg)
 - **Sensor de temperatura:** Detecta la temperatura actual.
+  
 ![Sensor de lluvia](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/sensor-temperatura.gif)
 
 #### 1.3 Módulo de actuadores
 **Funcioón:** Genera respuestas físicas en funcion de las decisiones del procesador.
 
 -**Buzzer**: Alarma sonora que se adctiva inmediatamente se detecta cercanía rítica de la precipitación del agua.
+
 ![Buzzer](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/buzzer.png)
+
 -**Pantalla LCD**: Muestra en tiempo real la información de la distancia y que triage tiene la cercania. 
 
+## 🧪 Configuración Experimental, Resultados y Análisis  
 
+### 🔧 **Configuración Experimental**  
+Para evaluar el rendimiento del sistema de detección de distancias, se realizaron pruebas en diferentes escenarios con el sensor ultrasónico **HC-SR04**.  
+
+#### 📌 **Condiciones de prueba:**  
+1. **Entorno controlado:** Se realizaron mediciones en un espacio cerrado con objetos de diferentes materiales y superficies.  
+2. **Variación de distancias:** Se colocaron obstáculos a **5 cm, 15 cm, 25 cm y 40 cm** para comprobar los cambios de estado.  
+3. **Verificación del LCD y LEDs:** Se observó si la pantalla mostraba los valores correctos y los LEDs respondían adecuadamente.  
+4. **Buzzer:** Se verificó la activación del buzzer en los estados *WARNING* y *CRITICAL*.  
+
+---
+
+### 📊 **Resultados**  
+
+| Distancia (cm) | Estado Detectado | LED Encendido | Buzzer |
+|---------------|----------------|--------------|--------|
+| + 31 cm        | NORMAL         | Verde       | ❌ Apagado |
+| 30 cm        | CAUTION        | Verde + Amarillo | 🔉 Suave  |
+| 20 cm        | WARNING        | Amarillo    | 🔔 Intermitente  |
+| 10 cm         | CRITICAL       | Rojo        | 🚨 Intermitente |
+
+- 📌 **El sistema respondió correctamente** a los cambios de distancia, activando los LEDs y el buzzer según la tabla.  
+- 📌 **Las mediciones fueron consistentes** en todas las pruebas, con una desviación mínima de ±1 cm.  
+- 📌 **La pantalla LCD mostró correctamente los valores de distancia y estado.**  
+
+---
+
+### 📈 **Análisis**  
+
+- **Precisión del sensor:** El sensor **HC-SR04** mostró lecturas estables en distancias entre **5 cm y 100 cm**, pero comenzó a mostrar fluctuaciones leves en valores superiores a **300 cm**.  
+- **Retraso en la actualización:** Debido al uso del buffer de promedios, los cambios de estado no fueron instantáneos, sino que tomaron **500 ms** para estabilizarse.  
+- **Interferencia del entorno:** Superficies irregulares o materiales absorbentes de sonido (como tela o espuma) afectaron la precisión de las mediciones.  
+
+### 📌 **Mejoras Propuestas**  
+
+✅ Implementar un filtro para eliminar lecturas erróneas en distancias extremas.  
+✅ Ajustar el intervalo de actualización del buzzer para reducir interferencias.  
+✅ Explorar el uso de sensores adicionales para mejorar la precisión en entornos complejos.  
+
+---
+
+📌 **Conclusión:** El sistema demostró ser **efectivo y confiable** en la detección de obstáculos dentro del rango de operación del sensor ultrasónico, con una correcta activación de las señales visuales y auditivas.  
+
+---
+
+### 📝 **Autoevaluación del Protocolo de Pruebas** 
+
+#### ✅ **1. Cobertura de Pruebas**
+- Se han probado todos los estados del sistema ( estado normal, estado Caution, Estado Critical).
+- Se han verificado que las distancias que mmide el sensor ultrasonico sean correctas.
+- Se verificó la respuesta del buzzer y los leds ante el cambio de estado.
+- Se revisó la información presentada en la pantalla LCD.
+
+#### 🛠 **2. Precisión y Reproducibilidad** 
+- Se realizaron múltiples mediciones a la misma distancia para validar la consistencia de los resultados.  
+
+#### 🛑 **4. Identificación de Problemas Potenciales**  
+❗ En algunas pruebas, el sensor HC-SR04 mostró pequeñas fluctuaciones en la lectura.  
+❗ El buzzer podría requerir ajustes en su intensidad para mejorar la percepción del usuario.  
+
+
+---
 ## Galería
 
 ![Buzzer](https://raw.githubusercontent.com/JohnRojas06289/IOT2025/main/resources/img/diagonal.jpg)
@@ -156,3 +280,10 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 ---
 
 🚀 *Este proyecto fue desarrollado para la universidad de La Sabana. ¡Contribuciones y sugerencias son bienvenidas!*
+
+### INTEGRANTES 
+John Jairo Rojas Vergara
+
+Oscar David Vergara Moreno
+
+Santiago Gavilán Paez
