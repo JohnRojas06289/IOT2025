@@ -120,6 +120,31 @@ classDiagram
 
 ```
 
+### Diagrama de Secuencias
+```mermaid
+sequenceDiagram
+    participant Usuario
+    participant HC_SR04 as Sensor Ultrasonido
+    participant SensorLluvia as Sensor de Lluvia
+    participant Arduino
+    participant Buzzer
+    participant LCD
+
+    Usuario->>HC_SR04: Activar sensor
+    HC_SR04-->>Arduino: Enviar distancia
+    Usuario->>SensorLluvia: Activar sensor
+    SensorLluvia-->>Arduino: Enviar estado de alarma
+
+    Arduino->>Arduino: Procesar datos
+    alt Lluvia detectada
+        Arduino->>Buzzer: Activar alarma
+    end
+
+    Arduino->>LCD: Mostrar distancia y estado de alarma
+
+```
+
+
 
 ### **Tecnologías Utilizadas**
 - **Microcontroladores**: Arduino.
