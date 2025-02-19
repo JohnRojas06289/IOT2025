@@ -93,11 +93,6 @@ classDiagram
         +leerDistancia(): float
     }
     
-    class SensorLluvia {
-        +estado: boolean
-        +detectarLluvia(): boolean
-    }
-    
     class Arduino {
         +procesarDatos(): void
         +enviarSeñal(): void
@@ -112,9 +107,7 @@ classDiagram
     }
     
     Sensor <|-- HC_SR04
-    Sensor <|-- SensorLluvia
     HC_SR04 --> Arduino : Enviar datos
-    SensorLluvia --> Arduino : Enviar datos
     Arduino --> Buzzer : Activar alarma
     Arduino --> PantallaLCD : Mostrar información
 
