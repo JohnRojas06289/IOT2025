@@ -297,7 +297,6 @@ Oscar David Vergara Moreno
 Santiago Gavilán Paez
 
 
-
 ```mermaid
 gantt
     title Cronograma del Proyecto de Automatización de T-Alem
@@ -325,5 +324,6 @@ gantt
     Presentación y sustentación              :b6, 2024-03-25, 4d
 
     section Proyecto
-    Desarrollo del anteproyecto              :c1, 2024-04-02, 38dgestión de proyectos (opcional):after a1, a2, a3, a4, a5, a6, a7, a8, a9, b1, b2, b3, b4, b5, b6, c1, d1, d2
+    Desarrollo del anteproyecto              :c1, 2024-04-02, 38d
+
 ```
