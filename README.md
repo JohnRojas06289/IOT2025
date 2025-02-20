@@ -304,26 +304,55 @@ gantt
     dateFormat  YYYY-MM-DD
     axisFormat  %m-%d
 
-    section Levantamiento de Información
-    Selección y visita a la empresa           :a1, 2024-01-22, 4d
-    Análisis proceso actual (inventario)       :a2, 2024-01-29, 4d
-    Análisis proceso actual (calidad)          :a3, 2024-01-29, 4d
-    Descripción del problema y necesidad        :a4, 2024-02-05, 4d
-    Definición de objetivos SMART              :a5, 2024-02-12, 4d
-    Definición de la metodología              :a6, 2024-02-05, 4d
-    Elaboración del cronograma                 :a7, 2024-02-12, 4d
-    Definición de alcance y riesgos           :a8, 2024-02-05, 4d
-    Redacción y envío del documento (entrega 1):a9, 2024-02-12, 4d
 
-    section Anteproyecto
-    Resumen de hallazgos (fase 1)             :b1, 2024-02-19, 4d
-    Restricciones de diseño                  :b2, 2024-02-26, 4d
-    Revisión y análisis de antecedentes      :b3, 2024-03-04, 4d
-    Redacción y envío del documento (entrega 2):b4, 2024-03-11, 4d
-    Preparación de la presentación           :b5, 2024-03-18, 4d
-    Presentación y sustentación              :b6, 2024-03-25, 4d
+    section Levantamiento de Información (Entrega 1: 19 de febrero)
+    Reunión inicial del equipo                : a1, 2024-01-22, 1d
+    Visita a la empresa y recolección datos   : a2, after a1, 3d
+    Análisis procesos (inventario y calidad) : a3, after a2, 5d
+    Identificación del problema y necesidad     : a4, after a3, 3d
+    Definición de objetivos SMART              : a5, after a4, 3d
+    Definición de la metodología              : a6, after a5, 3d
+    Elaboración del cronograma                 : a7, after a6, 3d
+    Definición de alcance y riesgos           : a8, after a7, 3d
+    Revisión preliminar grupal (fase 1)       : a9, after a8, 2d
+    Entrega 1: Documentación y anexos          : a10, after a9, 3d
+    Reunión con validador (fábrica)          : a11, after a10, 2d
+    Reunión con validador (profesor)          : a12, after a11, 2d
+    Ajustes finales y envío del documento      : a13, after a12, 2d
 
-    section Proyecto
-    Desarrollo del anteproyecto              :c1, 2024-04-02, 38d
+    section Anteproyecto (Entrega 2: 2 de abril)
+    Reunión inicial del equipo (fase 2)       : b1, 2024-02-20, 1d
+    Resumen de hallazgos (fase 1)             : b2, after b1, 2d
+    Restricciones de diseño                  : b3, after b2, 4d
+    Revisión y análisis de antecedentes      : b4, after b3, 5d
+    Revisión preliminar grupal (fase 2)       : b5, after b4, 2d
+    Entrega 2: Documento anteproyecto        : b6, after b5, 4d
+    Reunión con validador (fábrica)          : b7, after b6, 2d
+    Reunión con validador (profesor)          : b8, after b7, 2d
+    Ajustes finales y envío del documento      : b9, after b8, 2d
+    Preparación de la presentación           : b10, after b9, 3d
+    Presentación y sustentación              : b11, after b10, 1d
+
+    section Proyecto (Entrega 3: 14 de mayo)
+    Reunión inicial del equipo (fase 3)       : c1, 2024-04-03, 1d
+    Desarrollo del sistema de automatización  : c2, after c1, 25d
+    Pruebas internas del equipo               : c3, after c2, 5d
+    Revisión preliminar grupal (fase 3)       : c4, after c3, 2d
+    Entrega 3: Documentación del proyecto     : c5, after c4, 4d
+    Reunión con validador (fábrica)          : c6, after c5, 2d
+    Reunión con validador (profesor)          : c7, after c6, 2d
+    Ajustes finales y envío del documento      : c8, after c7, 2d
+    Evaluación de resultados y análisis      : c9, after c8, 5d
+    Informe final y presentación              : c10, after c9, 3d
+
+    section Recursos Humanos
+    John                                     : after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
+    Santiago                                 : after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
+    Oscar                                    : after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
+
+    section Recursos Materiales
+    Computadoras y software                  : after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
+    Cámara para visita a la empresa           : after a2
+    Software de gestión de proyectos (opcional): after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
 
 ```
