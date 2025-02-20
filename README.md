@@ -298,7 +298,6 @@ Santiago Gavilán Paez
 
 
 
-
 ```mermaid
 gantt
     title Cronograma Detallado del Proyecto de Automatización de T-Alem
@@ -308,29 +307,29 @@ gantt
 
     section Levantamiento de Información (Entrega 1: 19 de febrero)
     Selección y visita a la empresa           :a1, 2024-01-22, 5d
-    Análisis proceso actual (inventario)       :a2, 2024-01-29, 6d
-    Análisis proceso actual (calidad)          :a3, 2024-01-29, 6d
-    Descripción del problema y necesidad        :a4, 2024-02-05, 5d
-    Definición de objetivos SMART              :a5, 2024-02-12, 5d
-    Definición de la metodología              :a6, 2024-02-05, 5d
-    Elaboración del cronograma                 :a7, 2024-02-12, 5d
-    Definición de alcance y riesgos           :a8, 2024-02-05, 5d
-    Redacción y envío del documento (entrega 1):a9, 2024-02-12, 7d
+    Análisis proceso actual (inventario)       :a2, after a1, 6d
+    Análisis proceso actual (calidad)          :a3, after a1, 6d
+    Descripción del problema y necesidad        :a4, after a2, 5d
+    Definición de objetivos SMART              :a5, after a3, 5d
+    Definición de la metodología              :a6, after a4, 5d
+    Elaboración del cronograma                 :a7, after a5, 5d
+    Definición de alcance y riesgos           :a8, after a6, 5d
+    Redacción y envío del documento (entrega 1):a9, after a7, 7d
 
     section Anteproyecto (Entrega 2: 2 de abril)
     Resumen de hallazgos (fase 1)             :b1, 2024-02-20, 5d
-    Restricciones de diseño                  :b2, 2024-02-27, 6d
-    Revisión y análisis de antecedentes      :b3, 2024-03-05, 7d
-    Redacción y envío del documento (entrega 2):b4, 2024-03-12, 7d
-    Preparación de la presentación           :b5, 2024-03-19, 6d
-    Presentación y sustentación              :b6, 2024-03-26, 2d
+    Restricciones de diseño                  :b2, after b1, 6d
+    Revisión y análisis de antecedentes      :b3, after b2, 7d
+    Redacción y envío del documento (entrega 2):b4, after b3, 7d
+    Preparación de la presentación           :b5, after b4, 6d
+    Presentación y sustentación              :b6, after b5, 2d
 
     section Proyecto (Entrega 3: 14 de mayo)
     Desarrollo del anteproyecto              :c1, 2024-04-03, 35d
 
     section Difusión de Resultados
-    Preparación del informe final             :d1, 2024-05-01, 10d
-    Presentación de resultados               :d2, 2024-05-15, 2d
+    Preparación del informe final             :d1, after c1, 10d
+    Presentación de resultados               :d2, after d1, 2d
 
     section Recursos Humanos
     John                                     :after a1, a2, a4, a5, a8, a9, b1, b4, b5, c1, d1, d2
@@ -342,20 +341,3 @@ gantt
     Cámara para visita a la empresa           :after a1
     Software de gestión de proyectos (opcional):after a1, a2, a3, a4, a5, a6, a7, a8, a9, b1, b2, b3, b4, b5, b6, c1, d1, d2
 ```
-
-### Mejoras Clave
-
-*   **Mayor detalle en las tareas**: Cada fase se ha desglosado en tareas más específicas para facilitar la gestión y el seguimiento.
-*   **Asignación de recursos**: Se han añadido secciones para "Recursos Humanos" y "Recursos Materiales", asignando tareas a John, Santiago y Oscar, y especificando los materiales necesarios.
-*   **Holgura por fallas**: Se han añadido días adicionales a las tareas para tener en cuenta posibles retrasos o problemas inesperados.
-*   **Difusión de resultados**: Se ha incluido una sección para la preparación del informe final y la presentación de resultados, cumpliendo con la rúbrica.
-*   **Mayor claridad**: Se han mejorado las etiquetas y la estructura del diagrama para que sea más fácil de entender y seguir.
-
-### Cómo Usar Este Diagrama
-
-1.  Copia el código Markdown.
-2.  Abre un editor de Markdown compatible con Mermaid (como Typora o VS Code con la extensión Mermaid).
-3.  Pega el código Markdown en el editor.
-4.  El editor renderizará automáticamente el diagrama de Gantt.
-
-Este diagrama de Gantt más completo y detallado te ayudará a gestionar tu proyecto de manera más efectiva, asegurando que se cumplan los objetivos, se utilicen los recursos de manera adecuada y se entreguen los resultados esperados.
