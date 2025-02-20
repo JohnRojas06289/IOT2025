@@ -368,51 +368,51 @@ gantt
 
     section LevantamientodeInformación(Entrega1:19defebrero)
     Reunióninicialdelequipo:a1,2025-01-22,1d
-    Visitaalaempresayrecoleccióndedatos:a2,aftera1,3d
-    Análisisprocesos(inventarioycalidad):a3,aftera2,5d
-    Identificacióndelproblemaynecesidad:a4,aftera3,3d
-    DefinicióndeproyectoyobjetivosSMART:a5,aftera4,3d
-    Definicióndela metodología:a6,aftera5,3d
-    Elaboracióndelcronograma:a7,aftera6,3d
-    Definicióndelealcancelyriesgos:a8,aftera7,3d
-    Revisiónpreliminargrupal(fase1):a9,aftera8,2d
-    Entrega1:Documentaciónyanexos:a10,aftera9,3d
-    Reuniónconvalidador(fábrica):a11,aftera10,2d
-    Reuniónconvalidador(profesor):a12,aftera11,2d
-    Ajustesfinalesyenviódeldocumento:a13,aftera12,2d
+    Visitaalaempresayrecoleccióndedatos:a2, after a1, 3d
+    Análisisprocesos(inventarioycalidad):a3, after a2, 5d
+    Identificacióndelproblemaynecesidad:a4, after a3, 3d
+    DefinicióndeproyectoyobjetivosSMART:a5, after a4, 3d
+    Definicióndela metodología:a6, after a5, 3d
+    Elaboracióndelcronograma:a7, after a6, 3d
+    Definicióndelealcancelyriesgos:a8, after a7, 3d
+    Revisiónpreliminargrupal(fase1):a9, after a8, 2d
+    Entrega1:Documentaciónyanexos:a10, after a9, 3d
+    Reuniónconvalidador(fábrica):a11, after a10, 2d
+    Reuniónconvalidador(profesor):a12, after a11, 2d
+    Ajustesfinalesyenviódeldocumento:a13, after a12, 2d
 
     section Anteproyecto(Entrega2:2deabril)
     Reunióninicialdelequipo(fase2):b1,2025-02-20,1d
-    Resumendehallazgos(fase1):b2,afterb1,2d
-    Restriccionesdediseño:b3,afterb2,4d
-    Revisiónyanálisisdeantecedentes:b4,afterb3,5d
-    Revisiónpreliminargrupal(fase2):b5,afterb4,2d
-    Entrega2:Documentoanteproyecto:b6,afterb5,4d
-    Reuniónconvalidador(fábrica):b7,afterb6,2d
-    Reuniónconvalidador(profesor):b8,afterb7,2d
-    Ajustesfinalesyenviódeldocumento:b9,afterb8,2d
-    Preparacióndelapresentación:b10,afterb9,3d
-    Presentaciónysustentación:b11,afterb10,1d
+    Resumendehallazgos(fase1):b2, after b1, 2d
+    Restriccionesdediseño:b3, after b2, 4d
+    Revisiónyanálisisdeantecedentes:b4, after b3, 5d
+    Revisiónpreliminargrupal(fase2):b5, after b4, 2d
+    Entrega2:Documentoanteproyecto:b6, after b5, 4d
+    Reuniónconvalidador(fábrica):b7, after b6, 2d
+    Reuniónconvalidador(profesor):b8, after b7, 2d
+    Ajustesfinalesyenviódeldocumento:b9, after b8, 2d
+    Preparacióndelapresentación:b10, after b9, 3d
+    Presentaciónysustentación:b11, after b10, 1d
 
     section Proyecto(Entrega3:14demayo)
     Reunióninicialdelequipo(fase3):c1,2025-04-03,1d
-    Desarrollodeldesarrollodelautoma:c2,afterc1,25d
-    Pruebasinternasdelequipo:c3,afterc2,5d
-    Revisiónpreliminargrupal(fase3):c4,afterc3,2d
-    Entrega3:Documentacióndelproyecto:c5,afterc4,4d
-    Reuniónconvalidador(fábrica):c6,afterc5,2d
-    Reuniónconvalidador(profesor):c7,afterc6,2d
-    Ajustesfinalesyenviódeldocumento:c8,afterc7,2d
-    Evaluaciónderesultadosyanálisis:c9,afterc8,5d
-    Informefinalypresentación:c10,afterc9,3d
+    Desarrollodeldesarrollodelautoma:c2, after c1, 25d
+    Pruebasinternasdelequipo:c3, after c2, 5d
+    Revisiónpreliminargrupal(fase3):c4, after c3, 2d
+    Entrega3:Documentacióndelproyecto:c5, after c4, 4d
+    Reuniónconvalidador(fábrica):c6, after c5, 2d
+    Reuniónconvalidador(profesor):c7, after c6, 2d
+    Ajustesfinalesyenviódeldocumento:c8, after c7, 2d
+    Evaluaciónderesultadosyanálisis:c9, after c8, 5d
+    Informefinalypresentación:c10, after c9, 3d
 
     section RecursosHumanos
-    John:aftera1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,c1,c2,c3,c4,c5,c6,c7,c8,c9,c10
-    Santiago:aftera1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,c1,c2,c3,c4,c5,c6,c7,c8,c9,c10
-    Oscar:aftera1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,c1,c2,c3,c4,c5,c6,c7,c8,c9,c10
+    John: after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
+    Santiago: after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
+    Oscar: after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
 
     section RecursosMateriales
-    Computadoraysoftware:aftera1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,c1,c2,c3,c4,c5,c6,c7,c8,c9,c10
-    Cámaraparavisitaalaempresa:aftera2
-    Softwaredegestióndeproyectos(opcional):aftera1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,c1,c2,c3,c4,c5,c6,c7,c8,c9,c10
+    Computadoraysoftware: after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
+    Cámaraparavisitaalaempresa: after a2
+    Softwaredegestióndeproyectos(opcional): after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
   ```
