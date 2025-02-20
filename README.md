@@ -300,44 +300,30 @@ Santiago Gavilán Paez
 
 ```mermaid
 gantt
-    title Cronograma Detallado del Proyecto de Automatización de T-Alem
+    title Cronograma del Proyecto de Automatización de T-Alem
 
     dateFormat  YYYY-MM-DD
     axisFormat  %m-%d
 
-    section Levantamiento de Información (Entrega 1: 19 de febrero)
-    Selección y visita a la empresa           :a1, 2024-01-22, 5d
-    Análisis proceso actual (inventario)       :a2, after a1, 6d
-    Análisis proceso actual (calidad)          :a3, after a1, 6d
-    Descripción del problema y necesidad        :a4, after a2, 5d
-    Definición de objetivos SMART              :a5, after a3, 5d
-    Definición de la metodología              :a6, after a4, 5d
-    Elaboración del cronograma                 :a7, after a5, 5d
-    Definición de alcance y riesgos           :a8, after a6, 5d
-    Redacción y envío del documento (entrega 1):a9, after a7, 7d
+    section Levantamiento de Información
+    Selección y visita a la empresa           :a1, 2024-01-22, 4d
+    Análisis proceso actual (inventario)       :a2, 2024-01-29, 4d
+    Análisis proceso actual (calidad)          :a3, 2024-01-29, 4d
+    Descripción del problema y necesidad        :a4, 2024-02-05, 4d
+    Definición de objetivos SMART              :a5, 2024-02-12, 4d
+    Definición de la metodología              :a6, 2024-02-05, 4d
+    Elaboración del cronograma                 :a7, 2024-02-12, 4d
+    Definición de alcance y riesgos           :a8, 2024-02-05, 4d
+    Redacción y envío del documento (entrega 1):a9, 2024-02-12, 4d
 
-    section Anteproyecto (Entrega 2: 2 de abril)
-    Resumen de hallazgos (fase 1)             :b1, 2024-02-20, 5d
-    Restricciones de diseño                  :b2, after b1, 6d
-    Revisión y análisis de antecedentes      :b3, after b2, 7d
-    Redacción y envío del documento (entrega 2):b4, after b3, 7d
-    Preparación de la presentación           :b5, after b4, 6d
-    Presentación y sustentación              :b6, after b5, 2d
+    section Anteproyecto
+    Resumen de hallazgos (fase 1)             :b1, 2024-02-19, 4d
+    Restricciones de diseño                  :b2, 2024-02-26, 4d
+    Revisión y análisis de antecedentes      :b3, 2024-03-04, 4d
+    Redacción y envío del documento (entrega 2):b4, 2024-03-11, 4d
+    Preparación de la presentación           :b5, 2024-03-18, 4d
+    Presentación y sustentación              :b6, 2024-03-25, 4d
 
-    section Proyecto (Entrega 3: 14 de mayo)
-    Desarrollo del anteproyecto              :c1, 2024-04-03, 35d
-
-    section Difusión de Resultados
-    Preparación del informe final             :d1, after c1, 10d
-    Presentación de resultados               :d2, after d1, 2d
-
-    section Recursos Humanos
-    John                                     :after a1, a2, a4, a5, a8, a9, b1, b4, b5, c1, d1, d2
-    Santiago                                 :after a1, a2, a5, a6, a9, b2, b4, b5, c1, d1
-    Oscar                                    :after a1, a3, a5, a7, a9, b3, b4, b5, c1, d1
-
-    section Recursos Materiales
-    Computadoras y software                  :after a1, a2, a3, a4, a5, a6, a7, a8, a9, b1, b2, b3, b4, b5, b6, c1, d1, d2
-    Cámara para visita a la empresa           :after a1
-    Software de gestión de proyectos (opcional):after a1, a2, a3, a4, a5, a6, a7, a8, a9, b1, b2, b3, b4, b5, b6, c1, d1, d2
+    section Proyecto
+    Desarrollo del anteproyecto              :c1, 2024-04-02, 38dgestión de proyectos (opcional):after a1, a2, a3, a4, a5, a6, a7, a8, a9, b1, b2, b3, b4, b5, b6, c1, d1, d2
 ```
