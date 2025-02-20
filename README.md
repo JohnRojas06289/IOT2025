@@ -303,57 +303,62 @@ Santiago Gavilán Paez
 ```mermaid
 gantt
     title Cronograma Detallado del Proyecto de Automatización de T-Alem
-
     dateFormat  YYYY-MM-DD
     axisFormat  %m-%d
 
-    section LevantamientodeInformación(Entrega1:19defebrero)
-    Reunióninicialdelequipo:a1,2025-01-22,1d
-    Visitaalaempresayrecoleccióndedatos:a2, after a1, 3d
-    Análisisprocesos(inventarioycalidad):a3, after a2, 5d
-    Identificacióndelproblemaynecesidad:a4, after a3, 3d
-    DefinicióndeproyectoyobjetivosSMART:a5, after a4, 3d
-    Definicióndela metodología:a6, after a5, 3d
-    Elaboracióndelcronograma:a7, after a6, 3d
-    Definicióndelealcancelyriesgos:a8, after a7, 3d
-    Revisiónpreliminargrupal(fase1):a9, after a8, 2d
-    Entrega1:Documentaciónyanexos:a10, after a9, 3d
-    Reuniónconvalidador(fábrica):a11, after a10, 2d
-    Reuniónconvalidador(profesor):a12, after a11, 2d
-    Ajustesfinalesyenviódeldocumento:a13, after a12, 2d
+    section Levantamiento de Información (Entrega1: 19 de febrero)
+    Reunión inicial del equipo                 :a1, 2025-01-22, 1d
+    Visita a la empresa y recolección de datos   :a2, after a1, 3d
+    Análisis de procesos (inventario y calidad)  :a3, after a2, 5d
+    Identificación del problema y necesidad      :a4, after a3, 3d
+    Definición de proyecto y objetivos SMART       :a5, after a4, 3d
+    Definición de la metodología                 :a6, after a5, 3d
+    Elaboración del cronograma                   :a7, after a6, 3d
+    Definición del alcance y riesgos             :a8, after a7, 3d
+    Revisión preliminar grupal (fase1)             :a9, after a8, 2d
+    Entrega1: Documentación y anexos             :a10, after a9, 3d
+    Reunión con validador (fábrica)                :a11, after a10, 2d
+    Reunión con validador (profesor)               :a12, after a11, 2d
+    Ajustes finales y envío del documento         :a13, after a12, 2d
 
-    section Anteproyecto(Entrega2:2deabril)
-    Reunióninicialdelequipo(fase2):b1,2025-02-20,1d
-    Resumendehallazgos(fase1):b2, after b1, 2d
-    Restriccionesdediseño:b3, after b2, 4d
-    Revisiónyanálisisdeantecedentes:b4, after b3, 5d
-    Revisiónpreliminargrupal(fase2):b5, after b4, 2d
-    Entrega2:Documentoanteproyecto:b6, after b5, 4d
-    Reuniónconvalidador(fábrica):b7, after b6, 2d
-    Reuniónconvalidador(profesor):b8, after b7, 2d
-    Ajustesfinalesyenviódeldocumento:b9, after b8, 2d
-    Preparacióndelapresentación:b10, after b9, 3d
-    Presentaciónysustentación:b11, after b10, 1d
+    section Anteproyecto (Entrega2: 2 de abril)
+    Reunión inicial del equipo (fase2)            :b1, 2025-02-20, 1d
+    Resumen de hallazgos (fase1)                  :b2, after b1, 2d
+    Restricciones de diseño                     :b3, after b2, 4d
+    Revisión y análisis de antecedentes           :b4, after b3, 5d
+    Revisión preliminar grupal (fase2)             :b5, after b4, 2d
+    Entrega2: Documento anteproyecto              :b6, after b5, 4d
+    Reunión con validador (fábrica)                :b7, after b6, 2d
+    Reunión con validador (profesor)               :b8, after b7, 2d
+    Ajustes finales y envío del documento         :b9, after b8, 2d
+    Preparación de la presentación                :b10, after b9, 3d
+    Presentación y sustentación                   :b11, after b10, 1d
 
-    section Proyecto(Entrega3:14demayo)
-    Reunióninicialdelequipo(fase3):c1,2025-04-03,1d
-    Desarrollodeldesarrollodelautoma:c2, after c1, 25d
-    Pruebasinternasdelequipo:c3, after c2, 5d
-    Revisiónpreliminargrupal(fase3):c4, after c3, 2d
-    Entrega3:Documentacióndelproyecto:c5, after c4, 4d
-    Reuniónconvalidador(fábrica):c6, after c5, 2d
-    Reuniónconvalidador(profesor):c7, after c6, 2d
-    Ajustesfinalesyenviódeldocumento:c8, after c7, 2d
-    Evaluaciónderesultadosyanálisis:c9, after c8, 5d
-    Informefinalypresentación:c10, after c9, 3d
+    section Proyecto (Entrega3: 14 de mayo)
+    Reunión inicial del equipo (fase3)            :c1, 2025-04-03, 1d
+    Desarrollo del automatismo                    :c2, after c1, 25d
+    Pruebas internas del equipo                   :c3, after c2, 5d
+    Revisión preliminar grupal (fase3)             :c4, after c3, 2d
+    Entrega3: Documentación del proyecto          :c5, after c4, 4d
+    Reunión con validador (fábrica)                :c6, after c5, 2d
+    Reunión con validador (profesor)               :c7, after c6, 2d
+    Ajustes finales y envío del documento         :c8, after c7, 2d
+    Evaluación de resultados y análisis          :c9, after c8, 5d
+    Informe final y presentación                  :c10, after c9, 3d
 
-    section RecursosHumanos
-    John: after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
-    Santiago: after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
-    Oscar: after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
+    section Recursos Humanos
+    John      :d1, 2025-01-22, 120d
+    Santiago  :d2, 2025-01-22, 120d
+    Oscar     :d3, 2025-01-22, 120d
 
-    section RecursosMateriales
-    Computadoraysoftware: after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
-    Cámaraparavisitaalaempresa: after a2
-    Softwaredegestióndeproyectos(opcional): after a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10
+    section Recursos Materiales
+    Computadora y software                        :e1, 2025-01-22, 120d
+    Cámara para visita a la empresa               :e2, 2025-01-22, 120d
+    Software de gestión de proyectos (opcional)    :e3, 2025-01-22, 120d
+
   ```
+
+
+
+
+
