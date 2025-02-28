@@ -1,5 +1,6 @@
 # 🌊 **Sistema de Monitorización de Crecidas en Tiempo Real usando IoT**
 
+## https://github.com/JohnRojas06289/IOT2025/wiki
 ## Resumen General
 > **Colombia enfrenta desafíos recurrentes debido a las crecidas de ríos**, especialmente durante la temporada de lluvias y fenómenos climáticos como *La Niña*. Estas inundaciones han causado daños significativos a infraestructuras y han afectado a numerosas comunidades.
 >
